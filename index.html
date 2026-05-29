@@ -3,7 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ndanda - んだばい × 橋本妙子 × おんがくの杜</title>
+<title>ndanda - んだばい × ファスティング × 橋本妙子 × おんがくの杜</title>
+<meta name="description" content="ndanda合同会社 - 福島県田村市。発酵食品カフェ「んだばい」、滞在型ファスティング、声楽家 橋本妙子、おんがくの杜。食で整え、自然で還り、魂に届け、地域を育てる。">
+<meta name="theme-color" content="#c4a66a">
+<link rel="canonical" href="https://hideo-t.github.io/ndanda/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ndanda合同会社">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="ndanda - んだばい × ファスティング × 橋本妙子 × おんがくの杜">
+<meta property="og:description" content="福島県田村市から。食で整え、自然で還り、魂に届け、地域を育てる。">
+<meta property="og:url" content="https://hideo-t.github.io/ndanda/">
+<meta name="twitter:card" content="summary">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Noto+Serif+JP:wght@200;300;400;500;600&family=Zen+Maru+Gothic:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -34,17 +44,34 @@ body{font-family:'Noto Serif JP',serif;background:#f0ece4;display:flex;justify-c
 /* Cafe */
 .card-cafe{
   background:linear-gradient(165deg,#f5ebe0 0%,#e8d5c0 30%,#d4b896 100%);
-  min-height:200px;animation-delay:0.2s;
+  min-height:200px;animation-delay:0.2s;border-left:3px solid #8B1A2B;
 }
 .card-cafe::before{
   content:'';position:absolute;top:0;left:0;right:0;bottom:0;
   background:radial-gradient(ellipse at 70% 20%,rgba(196,166,106,0.15) 0%,transparent 60%);
 }
 
+/* Fasting */
+.card-fasting{
+  background:linear-gradient(165deg,#eaf3ee 0%,#d2e6da 50%,#b6d4c2 100%);
+  min-height:190px;animation-delay:0.4s;border-left:3px solid #1B6B4A;
+}
+.card-fasting::before{
+  content:'';position:absolute;top:0;left:0;right:0;bottom:0;
+  background:radial-gradient(ellipse at 60% 30%,rgba(27,107,74,0.12) 0%,transparent 60%);
+}
+.card-fasting .card-accent{opacity:0.18}
+.card-fasting .card-tag{background:rgba(27,107,74,0.12);color:#1B6B4A}
+.card-fasting .card-title{font-family:'Zen Maru Gothic',sans-serif;color:#1c3a2c}
+.card-fasting .card-title-en{color:#5a8a72}
+.card-fasting .card-desc{color:#3a5a48}
+.card-fasting .card-feature{background:rgba(255,255,255,0.5);color:#1B6B4A}
+.card-fasting .card-cta{background:#1B6B4A;color:#eef5f0}
+
 /* Taeko */
 .card-taeko{
   background:linear-gradient(165deg,#1a1520 0%,#0c0a14 50%,#18141e 100%);
-  min-height:220px;animation-delay:0.4s;
+  min-height:220px;animation-delay:0.6s;border-left:3px solid #1E3A6E;
 }
 .card-taeko::before{
   content:'';position:absolute;top:0;left:0;right:0;bottom:0;
@@ -54,7 +81,7 @@ body{font-family:'Noto Serif JP',serif;background:#f0ece4;display:flex;justify-c
 /* Mori */
 .card-mori{
   background:linear-gradient(165deg,#f0f5ef 0%,#dce8d8 50%,#c8d8c0 100%);
-  min-height:160px;animation-delay:0.6s;
+  min-height:160px;animation-delay:0.8s;border-left:3px solid #5c8a5c;
 }
 .card-mori::before{
   content:'';position:absolute;top:0;left:0;right:0;bottom:0;
@@ -69,6 +96,8 @@ body{font-family:'Noto Serif JP',serif;background:#f0ece4;display:flex;justify-c
 
 /* Card inner */
 .card-inner{position:relative;z-index:2;padding:24px 22px}
+.card-logo{height:48px;width:auto;display:block;margin-bottom:12px}
+.card-taeko .card-logo{height:54px}
 
 /* Tags */
 .card-tag{font-size:9px;letter-spacing:4px;margin-bottom:8px;display:inline-block;padding:3px 10px;border-radius:12px}
@@ -166,31 +195,56 @@ body{font-family:'Noto Serif JP',serif;background:#f0ece4;display:flex;justify-c
     <div class="logo">ndanda</div>
     <div class="logo-en">NDANDA LLC &middot; FUKUSHIMA</div>
     <div class="gold-line"></div>
-    <div class="tagline">体を整え、魂に届け、地域を育てる</div>
+    <div class="tagline">食で整え、自然で還り、魂に届け、地域を育てる</div>
   </div>
 
   <!-- Cards -->
   <div class="cards">
 
     <!-- Cafe -->
-    <a class="card card-cafe" href="https://ndanda.base.shop/" target="_blank">
+    <a class="card card-cafe" href="https://hideo-t.github.io/ndabai-cafe/">
       <div class="card-accent">&#127793;</div>
       <div class="card-inner">
+        <img class="card-logo" src="assets/logos/logo-cafe.png" alt="お米と発酵 Cafe&Shop nda焙">
         <div class="card-tag">FERMENTED FOODS CAFE &amp; SHOP</div>
         <div class="card-title">んだばい</div>
         <div class="card-title-en">NDABAI CAFE &amp; ONLINE SHOP</div>
         <div class="card-desc">
-          無農薬・自家焙煎・手作り発酵食品。<br>
-          田村市から全国へ、本物の味をお届けします。
+          自家焙煎コーヒーと発酵食。<br>
+          お米と発酵で、からだよろこぶひとときを。
         </div>
         <div class="card-features">
+          <span class="card-feature">カフェ</span>
           <span class="card-feature">EC通販</span>
-          <span class="card-feature">ファスティング</span>
-          <span class="card-feature">カフェ予約</span>
+          <span class="card-feature">テイクアウト</span>
           <span class="card-feature">料理教室</span>
         </div>
         <div class="card-cta">
-          ショップへ入る <span class="card-arrow">&rarr;</span>
+          カフェ＆ショップへ <span class="card-arrow">&rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Fasting -->
+    <a class="card card-fasting" href="https://hideo-t.github.io/ndabai-fasting/">
+      <div class="card-accent">&#127807;</div>
+      <div class="card-inner">
+        <img class="card-logo" src="assets/logos/logo-fasting.png" alt="nda焙 ファスティング">
+        <div class="card-tag">FASTING &amp; WELLNESS RETREAT</div>
+        <div class="card-title">ファスティング</div>
+        <div class="card-title-en">WELLNESS RETREAT &middot; TAMURA &amp; KATSURAO</div>
+        <div class="card-desc">
+          福島の食と自然で、人は本来の姿へ還る。<br>
+          滞在型ウェルネスプログラム。
+        </div>
+        <div class="card-features">
+          <span class="card-feature">1〜7泊</span>
+          <span class="card-feature">炭酸泉</span>
+          <span class="card-feature">音楽療法</span>
+          <span class="card-feature">少人数制</span>
+        </div>
+        <div class="card-cta">
+          プログラムを見る <span class="card-arrow">&rarr;</span>
         </div>
       </div>
     </a>
@@ -199,6 +253,7 @@ body{font-family:'Noto Serif JP',serif;background:#f0ece4;display:flex;justify-c
     <a class="card card-taeko" href="https://hideo-t.github.io/taeko-hashimoto/" target="_blank">
       <div class="card-accent">&#9835;</div>
       <div class="card-inner">
+        <img class="card-logo" src="assets/logos/logo-taeko.png" alt="オペラ歌手 橋本妙子 Taeko Hashimoto">
         <div class="card-tag">VOCALIST &amp; INTERNATIONAL ARTIST</div>
         <div class="card-title">橋本 妙子</div>
         <div class="card-title-en">TAEKO HASHIMOTO</div>
@@ -258,6 +313,15 @@ body{font-family:'Noto Serif JP',serif;background:#f0ece4;display:flex;justify-c
   <div class="footer">
     <div class="footer-live">
       <span class="live-dot"></span>AIチャットボット 24時間対応中
+    </div>
+    <div class="footer-links">
+      <a href="https://hideo-t.github.io/ndabai-cafe/">カフェ</a>
+      <span style="color:#c4b4a0">|</span>
+      <a href="https://hideo-t.github.io/ndabai-fasting/">ファスティング</a>
+      <span style="color:#c4b4a0">|</span>
+      <a href="https://hideo-t.github.io/taeko-hashimoto/">橋本妙子</a>
+      <span style="color:#c4b4a0">|</span>
+      <a href="https://hideo-t.github.io/musicmori/">おんがくの杜</a>
     </div>
     <div class="footer-links">
       <a href="https://www.instagram.com/taeko_hashimoto_japan/" target="_blank">Instagram</a>
